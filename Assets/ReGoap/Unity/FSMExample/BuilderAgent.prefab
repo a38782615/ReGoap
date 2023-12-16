@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 114626219609676066}
   - component: {fileID: 1583172238042589046}
   - component: {fileID: 8570182395477551300}
+  - component: {fileID: 6575386616756662724}
   m_Layer: 0
   m_Name: BuilderAgent
   m_TagString: Untagged
@@ -314,6 +315,23 @@ MonoBehaviour:
   ErrorDelay: 0.5
   WarnPossibleGoal: 1
   ResourceName: Ore
+--- !u!114 &6575386616756662724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125005807267310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea519775062c12f4387af1e6b9488507, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: CollectResourceGoal
+  Priority: 5
+  ErrorDelay: 0.5
+  WarnPossibleGoal: 1
+  ResourceName: Axe
 --- !u!1 &1848442404087198
 GameObject:
   m_ObjectHideFlags: 0
