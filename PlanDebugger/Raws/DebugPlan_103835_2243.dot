@@ -1,0 +1,80 @@
+
+digraph {
+
+node [shape=box]
+
+-542281554 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>NoAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 0 ; <b>h</b>: 2 ; <b>c</b>: 2</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'reconcilePosition': True, 'collectedResourceOre': True, </td> </tr>
+</table>
+>]
+-7078112 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>AddResourceToBankAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 1 ; <b>h</b>: 3 ; <b>c</b>: 4</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'>'hasResourceOre': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'collectedResourceOre': True, </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceOre': True, 'reconcilePosition': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+</table>
+>]
+528125330 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GoToAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 3 ; <b>h</b>: 2 ; <b>c</b>: 5</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceOre': True, 'reconcilePosition': True, </td> </tr>
+</table>
+>]
+1063328772 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GatherResourceAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 44 ; <b>h</b>: 2 ; <b>c</b>: 46</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'>'isAtPosition': (50.00, 0.50, 20.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'hasResourceOre': True, </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'reconcilePosition': True, 'isAtPosition': (50.00, 0.50, 20.00), </td> </tr>
+</table>
+>]
+1598532214 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GoToAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 95.88277 ; <b>h</b>: 1 ; <b>c</b>: 96.88277</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'isAtPosition': (50.00, 0.50, 20.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'reconcilePosition': True, </td> </tr>
+</table>
+>]
+2133735656 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GoToAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 147.5659 ; <b>h</b>: 0 ; <b>c</b>: 147.5659</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'reconcilePosition': True, 'isAtPosition': (20.00, 1.00, 59.60), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'></td> </tr>
+</table>
+>]
+2133735656 [style="bold" color="darkgreen"]
+1598532214 [style="bold" color="darkgreen"]
+1063328772 [style="bold" color="darkgreen"]
+528125330 [style="bold" color="darkgreen"]
+-7078112 [style="bold" color="darkgreen"]
+-542281554 [style="bold" color="darkgreen"]
+
+-542281554 -> -7078112
+-7078112 -> 528125330
+528125330 -> 1063328772
+1063328772 -> 1598532214
+1598532214 -> 2133735656
+
+}
+

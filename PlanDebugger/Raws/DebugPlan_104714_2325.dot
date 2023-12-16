@@ -1,0 +1,63 @@
+
+digraph {
+
+node [shape=box]
+
+-768052674 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>NoAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 0 ; <b>h</b>: 2 ; <b>c</b>: 2</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'>'hasResourceWood': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'collectedResourceWood': True, </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'collectedResourceWood': True, 'reconcilePosition': True, </td> </tr>
+</table>
+>]
+-232849232 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>AddResourceToBankAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 1 ; <b>h</b>: 3 ; <b>c</b>: 4</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'>'hasResourceWood': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'collectedResourceWood': True, </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceWood': True, 'reconcilePosition': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+</table>
+>]
+302354210 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GoToAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 3 ; <b>h</b>: 1 ; <b>c</b>: 4</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'reconcilePosition': True, 'isAtPosition': (79.80, 1.00, 60.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceWood': True, </td> </tr>
+</table>
+>]
+837557652 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>CraftWoodAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 4 ; <b>h</b>: 2 ; <b>c</b>: 6</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'>'hasResourceTree': True, 'isAtPosition': (86.46, 0.25, 20.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'hasResourceWood': True, </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceTree': True, 'isAtPosition': (86.46, 0.25, 20.00), </td> </tr>
+</table>
+>]
+-983867164 [label=<
+<table border='0' color='black' fontcolor='#F5F5F5'>
+    <tr> <td colspan='2'><b>GoToAction</b></td> </tr>
+    <hr/>
+    <tr align='left'> <td border='1' sides='rt'><b>Costs</b></td>           <td border='1' sides='t'><b>g</b>: 46.55759 ; <b>h</b>: 1 ; <b>c</b>: 47.55759</td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Preconditions</b></td>   <td border='1' sides='t'></td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Effects</b></td>         <td border='1' sides='t'>'reconcilePosition': True, 'isAtPosition': (86.46, 0.25, 20.00), </td> </tr>
+    <tr align='left'> <td border='1' sides='rt'><b>Goal</b></td>            <td border='1' sides='t'>'hasResourceTree': True, </td> </tr>
+</table>
+>]
+
+-768052674 -> -232849232
+-232849232 -> 302354210
+302354210 -> 837557652
+837557652 -> -983867164
+
+}
+
